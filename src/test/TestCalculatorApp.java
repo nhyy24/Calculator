@@ -16,9 +16,5 @@ public class TestCalculatorApp {
         c = new CalculatorImp();
     }
 
-    @Test
-    public void shouldReturnSumOfTwoNumbers(){
-        System.out.println(c.addition(1,2));
-    }
 }
 

@@ -1,12 +1,14 @@
 package main.framework;
 
+import java.util.ArrayList;
+
 public interface Calculator {
 
     /**
      * calculates the sum a+b
      * @return the sum of a and b
      */
-    public int addition(int a, int b);
+    public int addition(ArrayList<Integer> numbers);
 
     /**
      * calculates the difference a-b

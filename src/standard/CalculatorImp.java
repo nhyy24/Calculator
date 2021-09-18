@@ -2,13 +2,19 @@ package standard;
 
 import main.framework.Calculator;
 
+import java.util.ArrayList;
+
 public class CalculatorImp implements Calculator {
+    private int sum;
 
     public CalculatorImp(){
     }
     @Override
-    public int addition(int a, int b) {
-        return a+b;
+    public int addition(ArrayList<Integer> numbers) {
+        for (Integer number : numbers) {
+            sum += number;
+        }
+        return sum;
     }
 
     @Override
